@@ -7,7 +7,6 @@ namespace App\Controllers;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Framework\Controller\AbstractController;
-use PDO;
 use App\Entities\Product;
 use Doctrine\ORM\EntityManagerInterface;
 
