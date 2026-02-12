@@ -1,0 +1,100 @@
+Inleiding
+
+Sven Imholz en Frans de Boer vervullen binnen dit project de rol van opdrachtgever en product owner. In dit project vertegenwoordigen zij een gemeente die behoefte heeft aan een webapplicatie om het beheer van het zoutstrooiproces overzichtelijker en efficienter te maken. Het doel is het realiseren van een stabiel en betrouwbaar product dat door een gemeente kan worden ingezet voor het strooien van bevroren wegen.
+
+Doel
+
+Het doel van dit project is het ontwikkelen van een zoutstrooimanagementsysteem waarmee een gemeente inzicht krijgt in welke straten gestrooid moeten worden, op welk moment dit nodig is en hoeveel tijd het strooien per route in beslag neemt.
+
+Resultaat
+
+In dit project is een volledig functioneel zoutstrooimanagementsysteem gerealiseerd. Met dit systeem kunnen wegen worden vastgelegd waarvoor gestrooid moet worden. Per weg worden de naam en de geschatte tijd die nodig is om te strooien vastgelegd.
+
+Op basis van de buitentemperatuur berekent het systeem automatisch hoe vaak een weg gestrooid moet worden. De strooifrequentie is afhankelijk van de temperatuur: hoe kouder het is, hoe vaker er gestrooid moet worden. De berekening werkt als volgt:
+
+- Bij 1 graden C of hoger wordt er 1 keer gestrooid
+- Bij temperaturen tussen 0 en 1 graden C wordt er 2 keer gestrooid
+- Bij temperaturen onder 0 graden C wordt er 3 keer gestrooid (maximum)
+
+Op basis van het aantal strooibeurten en de opgegeven strooitijd per straat berekent het systeem zowel de tijd per straat als de totale tijd die nodig is om alle geselecteerde straten die dag te strooien.
+
+Afbakening
+
+Must Have
+
+- Mogelijkheid om wegen toe te voegen (inclusief naam en duur van strooien)
+- Berekenen en weergeven van de strooifrequentie per straat op basis van temperatuur
+- Overzichtelijke en gebruiksvriendelijke interface
+
+Should Have
+
+- Weerwidget die actuele weerinformatie toont en effect op strooiplanning
+- Inlogsysteem om straten bij te houden
+
+Could Have
+
+- Rapportage of logsysteem van het afgeronde werk
+
+Won't Have
+
+- Ondersteuning voor meerdere steden
+- Automatische temperatuurinvoer vanuit externe systemen
+
+Risico's
+
+- Bugs en crashes
+- Dat de API uitvalt
+- Ontbrekende functies
+- Een onoverzichtelijke webapplicatie
+- Niet op tijd afronden van project
+- Slechte planning
+
+Planning/Fasering
+
+Analyse:
+
+- Eisen opstellen
+- Schetsen
+- Plannen
+- Brainstormen
+
+Ontwerp:
+
+- API mogelijkheden bepalen
+- Lay-out bepalen
+- Kleurthema
+- Posities van elementen
+- Technisch ontwerp
+
+Realisatie:
+
+- Database ontwerp aanmaken
+- Straten toevoegen
+- Berekenen van strooifrequentie
+- Berekenen hoeveel strooiwagens nodig zijn
+- Functies afmaken
+
+Testen:
+
+- Straten toevoegen testen
+- Berekeningen testen
+- Alle resterende functies testen
+
+Oplevering:
+
+- Presenteren
+- Documentatie opleveren
+- Projectplan
+- Source code
+- Technisch ontwerp
+- Functioneel ontwerp
+
+Randvoorwaarden
+
+- Het systeem moet wegen kunnen toevoegen met een uniek nummer, naam, de tijd dat er gestrooid wordt en hoe vaak dat gebeurt.
+- Voor elke weg moet het systeem kunnen berekenen hoe vaak er gestrooid moet worden, afhankelijk van de temperatuur.
+- Het systeem moet per dag laten zien hoeveel strooiwagens er nodig zijn.
+- Het project moet binnen de afgesproken tijd klaar zijn.
+- De app hoeft er niet heel mooi uit te zien, maar moet wel makkelijk te gebruiken zijn.
+- De temperatuurgegevens komen niet automatisch binnen, maar worden handmatig ingevoerd of zijn vast.
+- De gebruikers van het systeem zijn medewerkers van de gemeente die het strooiplan maken.

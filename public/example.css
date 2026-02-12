@@ -1,3 +1,90 @@
 body {
-    background-color: lightblue;
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: #f3f6fb;
+    color: #1a2533;
+}
+
+.container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.hero {
+    margin-bottom: 1rem;
+}
+
+.hero h1 {
+    margin-bottom: 0.4rem;
+}
+
+.card {
+    background: #ffffff;
+    border: 1px solid #d8e0ea;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.row {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+}
+
+input[type="number"] {
+    flex: 1;
+    min-width: 150px;
+    padding: 0.6rem;
+    border-radius: 8px;
+    border: 1px solid #bdc9d8;
+}
+
+button {
+    padding: 0.65rem 1rem;
+    border: 0;
+    border-radius: 8px;
+    background: #0f5ea8;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0c4d88;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0.75rem 0;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 0.6rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+    background: #f8fafc;
+}
+
+@media (max-width: 700px) {
+    .row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    button {
+        width: 100%;
+    }
 }
